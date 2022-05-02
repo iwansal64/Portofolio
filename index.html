@@ -5,31 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ridwan B.S Portofolio</h1>
-    <div class="circle out" id="out">
-        <div class="circle hiding">
-            <div class="circle in" id="in">
-                <div class="circle popdown" id="info-content">
-                    <h2 id="info-title"></h2>
-                    <h3 id="info-text"></h3>
+    <!-- NAVBAR -->
+    <div id="nav-bar">
+        <div class="nav-bar-content" id="main-title-nav">Intro</div>
+        <div class="nav-bar-content" id="profile-nav">Profile</div>
+        <div class="nav-bar-content" id="skills-nav">Skills</div>
+        <div class="nav-bar-content" id="footer-nav">Footer</div>
+    </div>
+
+    <!-- INTRO -->
+    <h1 style="width: 90%" id="main-title">INTRO</h1>
+
+    <div class="circle circleDecor" id="circle-decor">
+        <div class="circle out" id="out">
+            <div class="circle hiding" id="circle-hiding">
+                <div class="circle in" id="in">
+                    <div class="circle popdown" id="info-content">
+                        <h2 id="info-title"></h2>
+                        <h3 id="info-text"></h3>
+                    </div>
+                    <h2 id="title" class="myname">Ridwan</h2>
+                    <h3 id="content"></h3>
                 </div>
-                <h2 id="title" class="myname" onclick="nameClick()">RIDWAN PRO PLEYER</h2>
-                <h3 id="content"></h3>
+                <div class="tab a" id="tabA">PROFILE</div>
+                <div class="tab b" id="tabB">SKILLS</div>
+                <div class="tab c" id="tabC">ACHIEVEMENT</div>
+                <div class="tab d" id="tabD">ORGANIZATION</div>
             </div>
-            <div class="tab a" id="tabA" onclick="onClick('profile')">PROFILE</div>
-            <div class="tab b" id="tabB" onclick="onClick('skills')">SKILLS</div>
-            <div class="tab c" id="tabC" onclick="onClick('achievement')">ACHIEVEMENT</div>
-            <div class="tab d" id="tabD" onclick="onClick('organization')">ORGANIZATION</div>
+        </div>
+        <div class="circle" id="back">Back</div>
+        <div class="circle" id="next">Next</div>
+    </div>
+
+
+    <!-- Profile ! -->
+    <div id="profile-section" class="section">
+        <h2 id="profile-name">Ridwan B.S Stories</h2>
+        <div id="story">
+
+            <p>
+                    Dulu pertama kali aku ngoding pake bahasa c# + unity. 
+                menurut aku lumayan susah sih apalagi untuk pemula. 
+                bahkan setelah beberapa bulan aku masih belum ngerti 
+                tentang hal hal dasar ngoding. setelah itu aku ganti 
+                bahasa pemrograman ke java. Aku lumayan suka java bahasa 
+                yang lumayan gampang dan sintaks nya juga mirip mirip 
+                sama c#. 
+            </p>
+
+            <p>
+                    Setelah beberapa bulan bermain java aku pindah 
+                ke python dan belajar di channel kelas terbuka yang keren abis.
+                aku suka banget sama python karena mudah dipahami dan aku juga 
+                suka sama keringkasan kode nya. Walaupun python gampang dan 
+                termasuk high level programming language dia juga bersifat <b>OOP
+                (Object Oriented Programming)</b> seperti java yang memungkinkan 
+                program jadi lebih gampang di maintainance dan lebih cantik  
+            </p>
+
+            <p>
+                    Setelah aku belajar python aku lanjutkan dengan belajar 
+                html, css, js untuk bikin website karena aku tertarik juga 
+                sama website dan bahasa javascript waktu itu. aku belajar 
+                web dari <a href="https://www.youtube.com/watch?v=3U1AhjEf7DM" style="color: rgb(0, 200, 200);">video ini</a> 
+                dan alhamdulillah nya bisa yey
+            </p>
+            
         </div>
     </div>
+    
+    <!-- Skills -->
+    <div id="skills-section" class="section">
+        <h2 id="skills-title">Skills</h2>
+        <div id="skill-content-container">
+            <div class="skill-content python"><span></span><p> Python : computer vision, graphic calculator</p></div>
+            <div class="skill-content js"><span></span><p> JavaScript : bikin website ini wkwkw</p></div>
+            <div class="skill-content cs"><span></span><p> C# : bisa make unity</p></div>
+            <div class="skill-content java"><span></span><p> Java : bisa bikin calculator</p></div>
+            <div class="skill-content dart"><span></span><p> Dart : bisa bikin game tapi gak gui</p></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-section" class="section">
+        <h2 id="footer-title">Links</h2>
+        <a href="https://github.com/iwansal64" target="blank">My Coding project</a>
+        <a href="https://www.instagram.com/iwan_wkwkw/" target="blank">My Instagram</a>
+        <div id="youtuber-links">
+            <p id="yt-title">Youtubers</p>
+            <a href="https://www.youtube.com/c/DeaAfrizal" target="blank">Youtubers Who Inspire Me</a>
+            <a href="https://www.youtube.com/c/KelasTerbuka" target="blank">Youtubers Who Teach Me Python/Java</a>
+            <a href="https://www.youtube.com/c/WebProgrammingUnpas" target="blank">Youtubers Who Teach Me Html/Js/Css</a>
+            <a href="https://www.youtube.com/c/programmingwithmosh" target="blank">Youtubers Who Teach Me Java/Html/Js</a>
+            <a href="https://www.youtube.com/channel/UCXrkgJrOFPXo3HM5WzRJJKg" target="blank">My Friend Youtube Channel (Arkana)</a>
+            <a href="https://www.youtube.com/channel/UCsFyGMZoWtK2Xe4ndPcD7Ew" target="blank">My Friend Youtube Channel (Reuben)</a>
+            <a href="https://www.youtube.com/channel/UC6gnf46tUhuI4JbQUO3NzcQ" target="blank">My Friend Youtube Channel 2 (Reuben)</a>
+        </div>
+    </div>
+    <a href="mailto:iwansal64@gmail.com?subject=Saran/Masukan" id="last-email-me">feel free to email me hehe</a>
+
     <div class="decor 1"></div>
     <div class="decor 2"></div>
     <div class="decor 3"></div>
     <div class="decor 4"></div>
     <div class="decor 5"></div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
+
+
+
 </body>
 </html>
